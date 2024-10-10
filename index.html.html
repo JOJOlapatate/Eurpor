@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e8e31b2d677205408920ab47f8adf5a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0e8e31b2d677205408920ab47f8adf5a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0e8e31b2d677205408920ab47f8adf5a = L.map(
+                "map_0e8e31b2d677205408920ab47f8adf5a",
+                {
+                    center: [48.5, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_60792382f58cc280433c79799cf719d1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+    
+            var marker_0c298fee7d85d1daf12aa5e1aefdf88a = L.marker(
+                [43.7102, 7.262],
+                {}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+    
+            var icon_f465a83f871b587cb025fc731ee314c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0c298fee7d85d1daf12aa5e1aefdf88a.setIcon(icon_f465a83f871b587cb025fc731ee314c5);
+        
+    
+        var popup_3279af23a88f1ffdc6d2d6d3ee39dc0d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2a48bdaf7d83e32058abb0d9ee52f8a = $(`<div id="html_a2a48bdaf7d83e32058abb0d9ee52f8a" style="width: 100.0%; height: 100.0%;">Nice (Départ): Départ le 10 février à 07h00 vers Athènes</div>`)[0];
+            popup_3279af23a88f1ffdc6d2d6d3ee39dc0d.setContent(html_a2a48bdaf7d83e32058abb0d9ee52f8a);
+        
+
+        marker_0c298fee7d85d1daf12aa5e1aefdf88a.bindPopup(popup_3279af23a88f1ffdc6d2d6d3ee39dc0d)
+        ;
+
+        
+    
+    
+            var marker_0219f2fad37121dcc4c33d6749d0c21a = L.marker(
+                [37.9838, 23.7275],
+                {}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+    
+            var icon_6a96bc9b39621da00275ed3df35e48be = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0219f2fad37121dcc4c33d6749d0c21a.setIcon(icon_6a96bc9b39621da00275ed3df35e48be);
+        
+    
+        var popup_c0aeeaff5c7df9d23193b00d50fd422c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7a8e5d993cc7e19b40a611ffabbf633 = $(`<div id="html_a7a8e5d993cc7e19b40a611ffabbf633" style="width: 100.0%; height: 100.0%;">Athènes: Arrivée le 10 février à 12h20, séjour jusqu'au 13 février à 14h40</div>`)[0];
+            popup_c0aeeaff5c7df9d23193b00d50fd422c.setContent(html_a7a8e5d993cc7e19b40a611ffabbf633);
+        
+
+        marker_0219f2fad37121dcc4c33d6749d0c21a.bindPopup(popup_c0aeeaff5c7df9d23193b00d50fd422c)
+        ;
+
+        
+    
+    
+            var marker_e33c65d9495d7a08933b060b8045c7e3 = L.marker(
+                [47.4979, 19.0402],
+                {}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+    
+            var icon_18e469d693702ab4e1a21acd2b72cdc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e33c65d9495d7a08933b060b8045c7e3.setIcon(icon_18e469d693702ab4e1a21acd2b72cdc6);
+        
+    
+        var popup_31bffc59e55d0a61da2a8487b61588a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_58354e055e4a6fa8138556e592d6cf3b = $(`<div id="html_58354e055e4a6fa8138556e592d6cf3b" style="width: 100.0%; height: 100.0%;">Budapest: Arrivée le 13 février à 15h55, séjour jusqu'au 16 février à 06h45</div>`)[0];
+            popup_31bffc59e55d0a61da2a8487b61588a0.setContent(html_58354e055e4a6fa8138556e592d6cf3b);
+        
+
+        marker_e33c65d9495d7a08933b060b8045c7e3.bindPopup(popup_31bffc59e55d0a61da2a8487b61588a0)
+        ;
+
+        
+    
+    
+            var marker_3c0bb6b7555830bc4d92feb5b04777ea = L.marker(
+                [50.0755, 14.4378],
+                {}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+    
+            var icon_3eb09c62a7d15c51de787c6330937bcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3c0bb6b7555830bc4d92feb5b04777ea.setIcon(icon_3eb09c62a7d15c51de787c6330937bcc);
+        
+    
+        var popup_04d230e44ce0bbe4780a36d38eec5f9c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ffc1537fc74f2d62f169a75fb1e36dfb = $(`<div id="html_ffc1537fc74f2d62f169a75fb1e36dfb" style="width: 100.0%; height: 100.0%;">Prague: Arrivée le 16 février à 08h00, séjour jusqu'au 19 février à 09h00 (train)</div>`)[0];
+            popup_04d230e44ce0bbe4780a36d38eec5f9c.setContent(html_ffc1537fc74f2d62f169a75fb1e36dfb);
+        
+
+        marker_3c0bb6b7555830bc4d92feb5b04777ea.bindPopup(popup_04d230e44ce0bbe4780a36d38eec5f9c)
+        ;
+
+        
+    
+    
+            var marker_8bad7ebb7c49744e4949313249e2a697 = L.marker(
+                [48.2082, 16.3738],
+                {}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+    
+            var icon_98eb0e965949d713d4db12ec8a47bd67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8bad7ebb7c49744e4949313249e2a697.setIcon(icon_98eb0e965949d713d4db12ec8a47bd67);
+        
+    
+        var popup_b1764c4af91481e58a092e67404d3f69 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eeea3a64b7dc878795bf872e1f84fb04 = $(`<div id="html_eeea3a64b7dc878795bf872e1f84fb04" style="width: 100.0%; height: 100.0%;">Vienne: Arrivée à Vienne le 19 février à 13h00, séjour jusqu'au 23 février à 10h50</div>`)[0];
+            popup_b1764c4af91481e58a092e67404d3f69.setContent(html_eeea3a64b7dc878795bf872e1f84fb04);
+        
+
+        marker_8bad7ebb7c49744e4949313249e2a697.bindPopup(popup_b1764c4af91481e58a092e67404d3f69)
+        ;
+
+        
+    
+    
+            var marker_e1b05e01837559ec87d76bd3859cddaa = L.marker(
+                [43.7102, 7.262],
+                {}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+    
+            var icon_92fb8061a341847e28ff2f4774d5a391 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1b05e01837559ec87d76bd3859cddaa.setIcon(icon_92fb8061a341847e28ff2f4774d5a391);
+        
+    
+        var popup_8b646712b0a77a02eca9d7d3e88ee955 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dac5662cb09ce9f121684b0ce70df9c0 = $(`<div id="html_dac5662cb09ce9f121684b0ce70df9c0" style="width: 100.0%; height: 100.0%;">Nice (Retour): Retour à Nice le 23 février à 12h50 depuis Vienne</div>`)[0];
+            popup_8b646712b0a77a02eca9d7d3e88ee955.setContent(html_dac5662cb09ce9f121684b0ce70df9c0);
+        
+
+        marker_e1b05e01837559ec87d76bd3859cddaa.bindPopup(popup_8b646712b0a77a02eca9d7d3e88ee955)
+        ;
+
+        
+    
+    
+            var poly_line_cbb7e9bf2e8191aacf8ab4bebe2e1e54 = L.polyline(
+                [[43.7102, 7.262], [37.9838, 23.7275], [47.4979, 19.0402], [50.0755, 14.4378], [48.2082, 16.3738], [43.7102, 7.262]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_0e8e31b2d677205408920ab47f8adf5a);
+        
+</script>
+</html>
